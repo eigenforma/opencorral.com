@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenCorral · A corral for harnessed models</title>
+<meta name="description" content="OpenCorral holds your intended result above the harnesses and models doing the work, and accepts nothing until the evidence passes. Open source under Apache-2.0.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="OpenCorral home">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="2" y="2" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2.4"/><path d="M8 10.5h12M8 17.5h12" stroke="#b45c3d" stroke-width="2.4" stroke-linecap="round"/></svg>
+      OpenCorral
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#why">Why</a>
+      <a href="#runs">What runs</a>
+      <a href="#evidence">Evidence</a>
+      <a href="#join">Join the build</a>
+      <a href="https://github.com/eigenforma/opencorral">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Open source · Runs on your machine</p>
+    <h1>A corral for harnessed models<span class="dot">.</span></h1>
+    <p class="lede">OpenCorral holds your intended result above the harnesses and models doing the work. Every service's report is a claim until a check run in the corral, or your own judgment, confirms it.</p>
+    <div class="actions">
+      <a class="button primary" href="https://github.com/eigenforma/opencorral">Read the code</a>
+      <a class="button" href="#join">Join the build</a>
+    </div>
+    <p class="fineprint">Apache-2.0. A local station: your records, artifacts and evidence stay on your computer.</p>
+  </div>
+
+  <div class="wrap">
+    <figure class="shot">
+      <img src="assets/station-blocked.png" width="1440" height="900" alt="The OpenCorral station showing a sample objective marked Blocked. Its evidence tab lists a passed non-empty check, a failed check because the required text Apache-2.0 was not found, and a judgment still to be made.">
+      <figcaption>The station refusing to accept a result: the sample contribution is missing a phrase its objective requires. Sample data.</figcaption>
+    </figure>
+  </div>
+
+  <section id="why">
+    <div class="wrap">
+      <h2>Why a corral<span class="dot">.</span></h2>
+      <p class="section-intro">In the steward's own words.</p>
+      <div class="quotes single">
+        <blockquote><p>A workplace is a sea of intelligences, harnessed by their roles and interconnecting jobs, but not in a full architecture to accomplish long running team activities, because the idea of harnesses running while a corral directs the herd to the output spaces, without directing the horses individually is the brilliant bit.</p></blockquote>
+      </div>
+      <p class="attribution">Scott E. Frias, steward of OpenCorral</p>
+    </div>
+  </section>
+
+  <section id="runs">
+    <div class="wrap">
+      <h2>What runs today<span class="dot">.</span></h2>
+      <p class="section-intro">A working local preview of the first result loop. You bring the work in from the tools you already use; the station decides nothing on a service's say-so.</p>
+      <div class="grid">
+        <div class="card"><h3>Objectives first</h3><p>Each objective names its required outputs and the criteria that decide when it is done.</p></div>
+        <div class="card"><h3>Any service, by relay</h3><p>Register the harness and model pairings you use, and copy each work order to them yourself.</p></div>
+        <div class="card"><h3>Exact deliverables</h3><p>Every returned file is kept as exact bytes with a SHA-256 hash, so a result never changes under its evidence.</p></div>
+        <div class="card"><h3>Checks and judgment</h3><p>Deterministic checks run on the bytes; the judgments that need a person are recorded as yours.</p></div>
+        <div class="card"><h3>Acceptance by evidence</h3><p>Nothing is accepted until every required criterion passes for the current result. Superseded findings stay in history.</p></div>
+        <div class="card"><h3>Honest costs, full export</h3><p>Declared costs, where an unknown cost stays unknown, and the whole record exportable as JSON.</p></div>
+      </div>
+      <p class="not-yet">Not yet: launching agents, reading harness telemetry, checks the builder never sees, and routing work by measured results. Those are the next slices, and the <a href="https://github.com/eigenforma/opencorral/blob/main/docs/ROADMAP.md">roadmap</a> says plainly what exists.</p>
+    </div>
+  </section>
+
+  <section id="evidence">
+    <div class="wrap evidence">
+      <div>
+        <h2>Evidence over claims<span class="dot">.</span></h2>
+        <p>In the project's first paired run, several harness and model pairings built the same real feature from the same starting point. Every build passed its own tests and the project's full verification. Hidden checks, whose contents no builder ever saw, still found a defect in three of the six builds, and one of those builds had already been through three rounds of blind review.</p>
+        <div class="figure-row">
+          <div class="figure"><strong>6</strong><span>builds of one task</span></div>
+          <div class="figure"><strong>6 of 6</strong><span>passed their own tests</span></div>
+          <div class="figure"><strong>3 of 6</strong><span>failed the hidden checks</span></div>
+        </div>
+        <p class="fineprint">One task, one run. It shows why a report is a claim; it does not rank anyone.</p>
+      </div>
+      <figure class="shot">
+        <img src="assets/station-accepted.png" width="1440" height="900" alt="The OpenCorral station showing a sample objective marked Accepted, with all three acceptance criteria passed and the recorded cost shown as unknown.">
+        <figcaption>After a corrected contribution from a second service, the same kind of objective passes every criterion and is accepted. Sample data.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="wrap join">
+      <div>
+        <h2>Join the build<span class="dot">.</span></h2>
+        <p>We are looking for a first circle of developers who already run more than one coding harness on real work, build in TypeScript or Python, and reason from tests and evidence rather than from another model's review.</p>
+        <p>The work divides into parts you can own: adapters to the harnesses, the ledger and allotter, the grader, the station, and the Python instruments behind it.</p>
+        <p class="fineprint">What is offered today is credit in the commit history and the work itself. No paid work or equity is on offer; anything of that kind will be announced publicly and in writing before it exists.</p>
+      </div>
+      <div>
+        <h3>First issues</h3>
+        <ul class="clean">
+          <li><small>Slice S0</small>Go and Rust validators for the payload conformance bench, so four independent engines agree</li>
+          <li><small>Slice S0</small>Faithful extraction of real harness records, every field's origin and every gap counted</li>
+          <li><small>Slice S0</small>A clean Windows install and packaging spike</li>
+          <li><small>Slice S1</small>Restore a station from its own exported record</li>
+          <li><small>Slice S1</small>Safe in-station previews for images and documents, never run as code</li>
+          <li><small>Slice S2</small>The first automated adapter, chosen by what each harness actually exposes</li>
+        </ul>
+        <div class="actions" style="margin-top:20px">
+          <a class="button primary" href="https://github.com/eigenforma/opencorral/issues">See the issues</a>
+          <a class="button" href="https://github.com/eigenforma/opencorral/blob/main/CONTRIBUTING.md">How to contribute</a>
+        </div>
+        <p class="fineprint">Every commit carries a Developer Certificate of Origin sign-off; you keep your copyright. New behavior comes with a test seen failing first, and a person approves every merge. More at <a href="https://opencorral.org">opencorral.org</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>OpenCorral is open source under the Apache License 2.0. The OpenCorral name is a trademark of Scott E. Frias; the license grants no rights to it.</p>
+    <p><a href="https://github.com/eigenforma/opencorral">GitHub</a> · <a href="https://opencorral.org">opencorral.org</a> · An <a href="https://eigenforma.com">Eigenforma</a> project</p>
+  </div>
+</footer>
+</body>
+</html>
